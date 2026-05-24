@@ -1,4 +1,4 @@
-# Mohith's Portfolio Website
+# This can be your own Portfolio Website
 
 A modern, professional portfolio website for Mohith - Developer, Designer, and Founder.
 
@@ -176,7 +176,7 @@ Replace URLs with actual social media profiles:
 
 ## 📞 Contact
 
-For questions or support, reach out to: hello@mohith.dev
+For questions or support, reach out to: quantum.loop.sc@gmail.com
 
 ---
 
