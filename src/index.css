@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3.5 bg-[#c2410c] text-[#fff7ea] rounded-full font-semibold hover:bg-[#9a3412] transition-colors duration-300 border border-[#ea580c]/20;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3.5 border-2 border-[#d6a57a] text-[#7c2d12] rounded-full font-semibold hover:border-[#c2410c] transition-colors duration-300 bg-[#fff7ea]/70;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-5 sm:px-8 lg:px-10;
+  }
+
+  .section-title {
+    @apply text-4xl sm:text-5xl font-bold text-[#2d1606] mb-6 leading-tight;
+  }
+
+  .card-glass {
+    @apply bg-[#fff9f1]/70 backdrop-blur-md border border-[#efd6bd]/70 rounded-3xl p-8 sm:p-10 hover:bg-[#fff7ea]/90 transition-all duration-300 shadow-[0_10px_30px_rgba(180,83,9,0.06)];
+  }
+}
+
+  .animated-designer-gradient {
+    background-image: linear-gradient(90deg, #c2410c 0%, #fb923c 35%, #8b5cf6 68%, #c2410c 100%);
+    background-size: 220% 100%;
+    animation: designerGradientShift 4.5s ease-in-out infinite;
+  }
+
+  @keyframes designerGradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:
+    radial-gradient(circle at top, rgba(251, 146, 60, 0.14), transparent 28%),
+    linear-gradient(180deg, #fff8f0 0%, #fffdf9 100%);
+  color: #2d1606;
+}
+
+main > section:not(#hero) {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+main > section#hero {
+  padding-top: 7rem;
+}
+
+::selection {
+  background: rgba(194, 65, 12, 0.18);
+  color: #2d1606;
+}
+
+html {
+  scroll-behavior: smooth;
+}
